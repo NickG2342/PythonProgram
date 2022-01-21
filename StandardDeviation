@@ -1,3 +1,54 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
+print("Hello world")
+def count(list):
+    count=0
+    for i in list:
+        count=count+1
+    return count
+        
+def sum(list):
+    total=0
+    for i in list:
+        total=total+i
+    return total
+        
+def average(list):
+    n=count(list)
+    total=sum(list)
+    return total/n
+    
+def degfreedom(list):
+    degfreedom=count(list)-1
+    return degfreedom
+    
+def variance(list):
+    for i in list:
+        diffsq=0
+        diffsq=diffsq+(i-average(list))**2
+    return diffsq/degfreedom(list)
+        
+import math
+
+def stdev(list):
+    stdev=math.sqrt(variance(list))
+    return stdev
+
+print('the count is ')    
+print(count([5,15,7,32,19]))
+print('the sum is ')
+print(sum([5,15,7,32,19]))
+print('the average is ')
+print(average([5,15,7,32,19]))
+print('the degrees of freedom are ')
+print(degfreedom([5,15,7,32,19]))
+print('the variance is ')
+print(variance([5,15,7,32,19]))
+print('the standard deviation is ')
+print(stdev([5,15,7,32,19]))
+
+
+
 # Define a function std_dev(), which calculates the sample standard deviation of a list of numbers
 def std_dev(list):
   def average(5,7,34,8,1)
